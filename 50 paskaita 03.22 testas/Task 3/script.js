@@ -16,7 +16,6 @@ const ENDPOINT = 'https://api.github.com/users';
 let knopke = document.querySelector(`#btn`);
 
 knopke.addEventListener(`click`, e => {
-    knopke.classList.add('hidden');
     document.querySelector(`#message`).classList.add('hidden');
     fetch(ENDPOINT)
         .then(res => res.json())
