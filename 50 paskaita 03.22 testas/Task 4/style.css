@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* Mobile first */
@@ -26,4 +26,19 @@
 .container h1 {
   margin-top: 50px;
   color: #333;
+}
+.masinos {
+  width: 800px;
+}
+.masinos h1 {
+  color: white;
+  background-image: linear-gradient(to right, blue, white);
+}
+.masinos p {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+.masinos p span {
+  background-color: blue;
+  color: white;
 }
