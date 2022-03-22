@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* Mobile first */
@@ -49,7 +49,7 @@
 }
 
 .output-cointainer h1 {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .output-cointainer #output {
@@ -58,4 +58,21 @@
   padding: 30px;
   border-radius: 5px;
   background-color: #fff;
+}
+
+/*  mano stiliai */
+.hidden {
+  display: none;
+}
+.kortele {
+  background-color: rgb(36, 36, 56);
+  display: flex;
+  justify-content: space-around;
+  width: 900px;
+  margin: 40px;
+  border-radius: 30px;
+}
+.kortele h2 {
+  color: white;
+  line-height: 100px;
 }

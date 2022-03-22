@@ -11,3 +11,23 @@ Pastaba: Informacija apie user'į (jo kortelė) bei turi turėti bent minimalų 
 -------------------------------------------------------------------------- */
 
 const ENDPOINT = 'https://api.github.com/users';
+
+
+let knopke = document.querySelector(`#btn`);
+
+knopke.addEventListener(`click`, e => {
+    knopke.classList.add('hidden');
+    document.querySelector(`#message`).classList.add('hidden');
+    fetch(ENDPOINT)
+        .then(res => res.json())
+        .then(data => {
+            data.forEach(element => {
+                document.querySelector(`#output`).innerHTML += `
+                <div class="kortele">
+                    <img src="${element.avatar_url}" alt="avataras" height="300px">
+                    <h2 class="loginas"> Login name: <br> ${element.login} </h2>
+                </div>
+            `;
+            });
+        })
+})
