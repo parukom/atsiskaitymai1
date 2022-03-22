@@ -33,3 +33,7 @@ const vidurkis = function (a, b) {
 }
 /* vidurkio isvedimas */
 console.log(vidurkis(metai));
+
+/* Vardu isvedimas */
+const getUsersNames = users.map(users => users.name)
+console.log(getUsersNames);
