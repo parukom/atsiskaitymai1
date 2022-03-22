@@ -19,3 +19,17 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30 },
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
+
+/* metu isvedimas */
+const metai = users.map(users => users.age)
+console.log(metai);
+
+/* vidurkio funkcija */
+const vidurkis = function (a, b) {
+  let sum = 0;
+  for (let i = 0; i < metai.length; i++) {
+    return metai.reduce((a, b) => a + b) / metai.length
+  }
+}
+/* vidurkio isvedimas */
+console.log(vidurkis(metai));
