@@ -7,6 +7,7 @@ import cookieParser from 'cookie-parser';
 
 /// importuojami route
 import home from './routes/home.js'
+import register from './routes/register.js';
 
 /// naudojamos const'antos
 const app = express();
@@ -22,6 +23,7 @@ app.set('views', './views');
 
 /// isduodami linkai route'ms
 app.use('/', home)
+app.use('/register', register)
 
 /// isnaudojami importuoti moduliai
 app.use(express.json());
