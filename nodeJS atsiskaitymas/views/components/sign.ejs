@@ -1,0 +1,84 @@
+<div class="signModal hidden">
+  <div class="chooseLoginOrRegister">
+    <h2 class="ffamily chooseLoginModal">Login</h2>
+    <p class="ffamily"><span class="cl-green">or</span></p>
+    <h2 class="ffamily chooseRegisterModal">Register</h2>
+    <div class="offModal">❌</div>
+  </div>
+  <div class="loginModal">
+    <h1
+      style="margin-top: 30px; margin-bottom: 30px; text-align: center"
+      class="ffamily"
+    >
+      Login
+    </h1>
+    <form action="/login" method="post">
+      <label class="label ffamily" for="name"
+        >Enter your name or Nickname</label
+      >
+      <br />
+      <input
+        class="input ffamily"
+        type="text"
+        name="name"
+        placeholder="Some name"
+      />
+      <br />
+      <label class="label ffamily" for="password">Enter your password</label>
+      <br />
+      <input
+        class="input ffamily"
+        type="password"
+        name="password"
+        placeholder="**********"
+      />
+      <br />
+      <button class="uploadKnopke ffamily" type="submit">Login</button>
+    </form>
+  </div>
+  <div class="registerModal hidden">
+    <h1
+      style="margin-top: 30px; margin-bottom: 30px; text-align: center"
+      class="ffamily"
+    >
+      Register
+    </h1>
+    <form action="/register" method="post">
+      <label class="label ffamily" for="name">Enter your name</label> <br />
+      <input
+        class="input ffamily"
+        type="text"
+        name="name"
+        placeholder="aReYOUok_Z"
+      />
+      <br />
+      <label class="label ffamily" for="email">Enter your email</label> <br />
+      <input
+        class="input ffamily"
+        type="email"
+        name="email"
+        placeholder="some@mail.com"
+      />
+      <br />
+      <label class="label ffamily" for="password">Enter password</label> <br />
+      <input
+        class="input ffamily"
+        type="password"
+        name="password"
+        placeholder="***********"
+      />
+      <br />
+      <label class="label ffamily" for="password">Re-Enter password</label
+      ><br />
+      <input
+        class="input ffamily"
+        type="password"
+        name="password"
+        placeholder="***********"
+      /><br />
+      <button class="uploadKnopke ffamily margin-bottom" type="submit">
+        Register
+      </button>
+    </form>
+  </div>
+</div>

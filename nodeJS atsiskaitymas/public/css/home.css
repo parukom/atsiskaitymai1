@@ -20,6 +20,15 @@
 .cl-green{
     color: green;
 }
+.margin-bottom{
+    margin-bottom: 30px;
+}
+footer{
+    background-color: #333;
+    color: white;
+    font-size: 0.8rem;
+}
+
 /* nav css */
 nav{
     display: flex;
@@ -49,7 +58,7 @@ nav img{
 
 .sekcija{
     margin: 0 auto;
-    min-height: calc(100vh - 50px);
+    min-height: calc(100vh - 66px);
     max-width: 980px;
     overflow: hidden;
     position: relative;
@@ -63,7 +72,7 @@ nav img{
     right: 0;
     bottom: 0;
     top: 0;
-    transition: 1s;
+    transition: 0.3s;
     z-index: -1;
 }
 .uploadModal{
@@ -120,3 +129,37 @@ nav img{
 }
 
 /* ************************* */
+
+/* Login Sign Up styles */
+.signModal{
+    background: rgba(255, 255, 255, 0.7);
+    min-height: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 500px;
+    z-index: 1;
+}
+.chooseLoginOrRegister{
+    align-items: center;
+    border-bottom: 1px solid white;
+    box-shadow: 1px 1px 5px black;
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    position: relative;
+}
+.offModal{
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.chooseLoginModal, .chooseRegisterModal{
+    cursor: pointer;
+}
+.chooseLoginModal:hover{
+    color: rgb(0, 155, 155);
+}
+.chooseRegisterModal:hover{
+    color: rgb(0, 155, 155);
+}

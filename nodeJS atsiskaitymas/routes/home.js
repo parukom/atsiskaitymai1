@@ -9,7 +9,9 @@ home.get('/', (req, res) => {
     res.render('home', { page: 'home', css: 'home.css', js: 'home.js' })
 })
 
+// home.get('/', (req, res) +> {
 
+// })
 
 
 /// exportuojamas route
