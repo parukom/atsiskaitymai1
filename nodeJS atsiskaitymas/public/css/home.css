@@ -1,3 +1,122 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+/* main css */
+* {
+    margin: 0;
+}
+.ffamily{
+    font-family: 'Cinzel', serif;
+}
+.hidden{
+    display: none;
+    transition: 0.2s;
+}
+.blur{
+    filter: blur(5px);
+    transition: 0.2s;
+}
+.cl-blue{
+    color: blue;
+}
+.cl-green{
+    color: green;
+}
+/* nav css */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
     background-color: #333;
 }
+nav button{
+    background-color: green;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+nav button:hover{
+    color: blue;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+nav img{
+    height: 50px;
+    margin-left: 5px;
+}
+/***********************************/
+
+.sekcija{
+    margin: 0 auto;
+    min-height: calc(100vh - 50px);
+    max-width: 980px;
+    overflow: hidden;
+    position: relative;
+}
+.bgc{
+    background-image: url('../img/pexels-christian-heitz-842711.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transition: 1s;
+    z-index: -1;
+}
+.uploadModal{
+    background: rgba(255, 255, 255, 0.7);
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 500px;
+}
+
+/* Inside of upload modal */
+.h1AndCloseButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.uploadH1{
+    text-align: center;
+    font-size: 2rem;
+}
+.closeModalButton{
+    cursor: pointer;
+    color: red;
+    font-size: 1.5rem;
+}
+.label {
+    font-size: 1rem;
+    margin-left: 10px;
+}
+.input{
+    height: 30px;
+    margin: 10px;
+    width: 94%;
+}
+.textarea{
+    height: 130px;
+    margin: 10px;
+    width: 94%;
+}
+.uploadKnopke{
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    margin-left: 25%;
+    width: 50%;
+    transition: 0.2s;
+}
+.uploadKnopke:hover{
+    background-color: green;
+    color: white;
+    transition: 0.2s;
+    transform: scale(1.1);
+    font-size: 1.1rem;
+}
+
+/* ************************* */
